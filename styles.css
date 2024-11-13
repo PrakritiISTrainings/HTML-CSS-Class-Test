@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.google-btn{
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.google-btn:hover{
+    padding: 1.5rem;
+    transition: padding 1s ease-in-out;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;           
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.navbar{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.navbar ul li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.square-div-1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+}
+
+.square-div-2{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+}
+
+.square-div-3{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.absolute-div-2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.absolute-div-3{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+
+/* grid layout */
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    "sidebar content content"
+    "sidebar content content"
+    "sidebar content content"
+    "sidebar content content"
+    "sidebar content content"
+    "sidebar content content"
+    "sidebar content content"
+    "sidebar content content"
+    "sidebar content content"
+    "sidebar content content"
+    "sidebar content content"
+    "sidebar content content"
+    "sidebar content content"
+    "footer footer footer";
+    gap: 10px;
+}
+
+
+.item {
+    text-align: center;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+
+.header {
+    grid-area: header;
+    background-color: aqua;
+}
+
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgb(220, 147, 147);
+}
+
+
+.content {
+    grid-area: content;
+    background-color: brown;
+}
+
+
+.footer {
+    grid-area: footer;
+    background-color: aquamarine;
+}
+
+  
